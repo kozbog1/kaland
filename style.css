@@ -1,5 +1,5 @@
 body {
-  background-image: url('img/hatterkep.png');
+  background-image: url('hatterkep.png');
   background-size: cover; /* a kép kitölti az egész képernyőt */
   background-repeat: no-repeat; /* nem ismétlődik */
   background-position: center;
