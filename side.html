@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Side quest</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body {
+  background-color: #995440 !important;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Uncial Antiqua', serif;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2{
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Uncial Antiqua', serif;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;  /* vízszintesen középre */
+  align-items: center;      /* függőlegesen középre */
+  height: 80vh;            /* teljes magasságú konténer */
+}
+
+.image img {
+  max-width: 90%;           /* képméret korlátozás, opcionális */
+  height: auto;
+}
+</style>
+
+<body>
+    <h1>Csak azok lelke nyugodhat békében, kik teljesítik minden küldetésüket.</h1>
+    <h2>Fejtsd meg a feladványt és megleled jutalmad.</h2>
+    <div class="image">
+        <img class="image" src="/img/kincs.JPG" alt="kincs" usemap="#kincs">
+    </div>
+    <map name="kincs">
+        <area shape="poly" coords="1256,511,1253,434,462,436,441,517" href="terkep.html" onclick="terkep()" target="_blank">
+    </map>
+
+</body>

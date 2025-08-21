@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Quest 3</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<style>
+body {
+    background-color: #995440 !important;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Uncial Antiqua', serif;
+  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+h2, p {
+  color: #ffffff;
+  font-family: 'Uncial Antiqua', serif;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #995440;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 20px 60px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 220px; /* fontos! eltolja a tartalmat a fejléc alá */
+}
+
+.list {
+     top: 70px;
+     width: 500px;
+     height: auto;
+     perspective: 1000px;
+     z-index: 1;
+     position: relative;
+}
+
+.paper {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     transform-style: preserve-3d;
+}
+
+.paper-body {
+    width: 100%;
+    min-height: 800px;
+    border-radius: 15px;
+    background-color: #F4E7E1;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+}
+
+ul.list-group {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list-group-item {
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+      color: #793623;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fantasy-checkbox {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #4e342e;
+      border-radius: 4px;
+      background-color: #fffbe6;
+      cursor: pointer;
+      appearance: none;
+    }
+
+    .fantasy-checkbox:checked {
+      background-color: #c55c16;
+      border-color: #c55c16;
+    }
+
+    .fantasy-checkbox:checked::after {
+      content: "✔";
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      left: 4px;
+      top: -1px;
+    }
+
+    .custom-btn {
+     background-color: #f2d6c9 !important; /* egy világos, krémszín */
+     color: #4a2311 !important;           /* sötétbarna szöveg */
+     border: none;
+     border-radius: 10px;
+     font-family: monospace;
+     font-size: 1.2rem;
+     padding: 10px 24px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     transition: all 0.3s ease;
+}
+
+    .custom-btn:hover {
+     background-color: #e4b8a8 !important;
+     color: #fff !important;
+}
+
+p.lista{
+  color: #793623;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+}
+
+p.lista1{
+  color: #793623;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+
+p.extra{
+  color: #793623;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+</style>
+
+<body>
+
+<header>
+  <h1 class="invitation-title">QUEST III.</h1>
+  <h2>Az utolsó simítások</h2>
+  <p>Határidő: 2025.09.21. 7:10</p>
+</header>
+
+<main class="content-wrapper">
+    <div class="list">
+      <div class="paper">
+        <div class="paper-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item1">
+              <label for="item1">telefon feltöltve</label>
+            </li>
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item7">
+              <label for="item7">füles feltöltve</label>
+            </li>
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item2">
+              <label for="item2">szemüvegek kéznél</label>
+            </li>
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item4">
+              <label for="item4">pénztárca, iratok kéznél</label>
+            </li>
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item5">
+              <label for="item5">pisi, kaki megvolt</label>
+            </li>
+            <li class="list-group-item">
+              <input type="checkbox" class="fantasy-checkbox" id="item6">
+              <label for="item6">Bogi mindent elpakolt-e?</label>
+            </li>
+        </ul>
+        <br>
+        <p class="extra">a további információkat Bogi fopgja szolgáltatni</p>
+        </div>
+      </div>
+    </div>
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll('.fantasy-checkbox');
+
+    checkboxes.forEach(cb => {
+      // Állapot visszatöltése
+      const saved = localStorage.getItem(cb.id);
+      if (saved === "true") cb.checked = true;
+
+      // Mentés állapotváltozáskor
+      cb.addEventListener('change', () => {
+        localStorage.setItem(cb.id, cb.checked);
+      });
+    });
+  });
+</script>
+
+</body>
